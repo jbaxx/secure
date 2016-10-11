@@ -44,7 +44,7 @@ github_key <- function(username, i = 1) {
 #'   otherwise uses first file that matches \code{name}.
 #' @export
 local_key <- function(name = "id_rsa") {
-  public_keys <- dir("~/.ssh", pattern = "\\.(pub|pem)$", full.names = TRUE)
+  public_keys <- dir("C:/Users/brandao.jb/.ssh", pattern = "\\.(pub|pem)$", full.names = TRUE)
 
   if (is.null(name)) {
     key <- public_keys[[1]]
